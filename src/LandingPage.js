@@ -2,7 +2,7 @@ import { QRCodeSVG } from "qrcode.react";
 import { Link } from "react-router-dom";
 
 export default function LandingPage() {
-    const deployedUrl = "https://terras-nomad-quiz.netlify.app";
+    const deployedUrl = "https://terras-nomad-quiz.netlify.app/";
 
     return (
         <div className="min-h-screen bg-cream">
