@@ -2,6 +2,8 @@ import { QRCodeSVG } from "qrcode.react";
 import { Link } from "react-router-dom";
 
 export default function LandingPage() {
+    const deployedUrl = "https://terras-nomad-quiz.netlify.app/quiz";
+
     return (
         <div className="min-h-screen bg-cream">
             <div className="max-w-6xl mx-auto px-6 py-20">
@@ -43,7 +45,7 @@ export default function LandingPage() {
                         </p>
                         <div className="flex justify-center">
                             <QRCodeSVG
-                                value={window.location.href + "quiz"}
+                                value={deployedUrl}
                                 size={200}
                                 level="H"
                                 includeMargin={true}
